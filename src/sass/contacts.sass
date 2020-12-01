@@ -1,0 +1,344 @@
+
+@import 'fonts'
+@import 'variables'
+
+
+// ====  General styles  ====
+
+*
+    font-family: $Montserrat-Regular
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none
+
+a:hover, button:hover
+    cursor: pointer
+
+ul,li 
+    list-style-type: none
+    outline: none
+
+body
+    max-width: 1366px
+    width: 100%
+    margin: 0 auto
+
+.container
+    max-width: 1170px
+    width: 1170 / 1366 * 100%
+    margin: 0 auto
+
+a.button
+    display: block
+    line-height: 45px
+    background-color: rgb(255, 255, 255)
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35)
+    width: 212px
+    height: 45px
+    border-radius: 22.5px
+    border: none
+    font-size: 18px
+    color: rgb(108, 108, 108)
+    font-family: $Montserrat-Bold
+    text-transform: uppercase
+    text-align: center
+
+    span
+        margin-left: 20px
+
+    &:hover
+        color: red
+        span
+            color: red
+
+
+// ==== Styles for sections
+
+.icon-ctrl
+    display: inline-block
+    transform: rotate(90deg)
+
+header
+    padding-top: 64px
+    padding-bottom: 52px
+    background-color: #f5f5f5
+    position: relative
+
+    .wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 168px
+    nav
+        width: 550 / 1170 * 100%
+
+    .menu 
+        display: flex
+        justify-content: space-between
+        
+        &_list 
+            padding: 0 10px
+            border-bottom: 3px solid transparent
+            padding: 10px
+
+            &:hover
+                border-bottom: 1px solid #212121
+
+            &_active, &_active:hover
+                font-family: $Montserrat-Bold
+                border-bottom: 3px solid #212121
+                font-weight: 700
+
+            &:last-child:hover
+                border-bottom: none
+
+        &_link 
+            height: 100%       
+            font-size: 14px
+            color: rgb(33, 33, 33)
+            font-family: $Montserrat-Regular
+            text-transform: uppercase
+
+            &_active
+                font-family: $Montserrat-Bold
+                border-bottom: 3px solid #212121 
+                font-weight: 700           
+
+    .logo
+        width: 185px
+        height: 22px
+
+    .subtitle
+        font-size: 18px
+        color: #43a047
+        font-family: $Montserrat-Bold
+        text-transform: uppercase
+        text-align: left
+        margin-bottom: 12px
+
+    .title_main        
+        font-size: 62px
+        font-family: $Montserrat-Thin
+        letter-spacing: -0.07em
+        color: rgb(33, 33, 33)
+        text-align: left
+        margin-bottom: 25px
+
+    .title_text  
+        width: 470 / 1170 * 100%
+        font-size: 14px
+        font-weight: 300
+        color: rgb(108, 108, 108)
+        line-height: 1.714
+        text-align: left
+        margin-bottom: 30px
+
+.location
+    padding: 71px 0 122px
+    .container
+        display: flex
+        justify-content: space-between
+        .block
+            width: 370/1170*100%
+            padding: 48px 0 60px
+            border-width: 1px
+            border-color: rgb(156, 156, 156)
+            border-style: solid
+            text-align: center
+ 
+            .icon-location_on
+                display: block
+                font-size: 48px
+                margin-bottom: 34px
+            .name
+                font-size: 22px
+                color: rgb(33, 33, 33)
+                font-family: $Montserrat-Bold
+                text-transform: uppercase
+                margin-bottom: 15px
+            .phone,.email,.address_text
+                font-size: 14px
+                color: rgb(108, 108, 108)
+                font-family: $Montserrat-Bold
+                margin-bottom: 5px
+            .phone_number,.email_address
+                margin-bottom: 15px
+                a
+                    font-size: 14px
+                    color: #212121
+                    font-family: $Montserrat-Bold
+                    &:hover
+                        color: red
+            .address
+                font-size: 14px
+                color: #6c6c6c
+                font-family: $Montserrat-Regular
+
+.footer
+    padding: 120px 0 30px
+    background-color: #f7f7f7
+    .container
+        h3 
+            font-size: 18px
+            color: rgb(108, 108, 108)
+            font-family: $Montserrat-Bold
+            text-transform: uppercase
+            text-align: left
+            margin-bottom: 20px
+        
+
+    &_top
+        margin-bottom: 60px
+        display: flex
+        justify-content: space-between
+
+        a          
+            font-size: 14px
+            color: rgb(33, 33, 33)
+            font-family: $Montserrat-Bold
+            text-transform: uppercase
+            line-height: 1.857
+            text-align: left
+            &:hover
+                color: red
+
+    &_block
+        display: flex
+
+        &_left,&_right
+            flex-basis: 235/470*100%
+            a 
+                display: block
+                &:hover
+                    color: red
+    
+    &_contact
+        flex-basis: 270/1170*100%
+        font-size: 14px
+        color: rgb(33, 33, 33)
+        line-height: 1.571
+        text-align: left
+ 
+    &_info
+        flex-basis: 470/1170*100%
+
+    &_stay
+        flex-basis: 370/1170*100%   
+
+        .text 
+            font-size: 14px
+            color: rgb(33, 33, 33)
+            line-height: 1.571
+            text-align: left
+            margin-bottom: 20px
+
+        form 
+            position: relative
+
+        input          
+            border-width: 1px
+            border-color: rgb(217, 222, 225)
+            border-style: solid
+            background-color: rgb(255, 255, 255)
+            width: 100%  
+            padding: 15px       
+            font-size: 14px
+            font-weight: 300
+            color: rgb(108, 108, 108)
+            &:focus
+                outline: none
+                border: none
+
+        .icon-compass
+            display: block
+            position: absolute
+            padding: 15px
+            top: 50%
+            right: 0
+            transform: translateY(-50%)
+            cursor: pointer
+            &:hover
+                outline: 1px solid rgb(217, 222, 225)
+                
+    &_bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &_copy 
+        font-size: 12px
+        color: rgb(108, 108, 108)
+        font-family: $Montserrat-Bold
+        text-transform: uppercase
+        text-align: left
+  
+    &_icons
+        
+        display: flex
+        justify-content: space-between
+        width: 140px
+        
+
+    &_icon
+        position: relative
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        background-color: #6c6c6c 
+
+        a
+            width: 100%
+
+        img.google
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 12/32*100%
+        span
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            font-size: 13px
+            color: #fff
+
+    .footer_privacy  
+        font-size: 12px
+        color: rgb(108, 108, 108)
+        font-family: $Montserrat-Bold
+        text-transform: uppercase
+        text-align: right
+  
+
+
+ 
+
+    
+
+  
+
+        
+
+  
+  
+
+  
+
+
+
+
+                
+
+
+
+
+    
+
+
+
+
+@import 'media'
