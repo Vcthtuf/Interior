@@ -207,9 +207,27 @@ header
                     border-bottom: 3px solid rgb(33, 33, 33)
     
     &_img
-        display: flex
+        // display: flex
+        // justify-content: space-between
+        // flex-wrap: wrap 
+        display: grid
+        grid-template-rows: auto
+        grid-template-column: repeat(4, auto)
+        grid-template-areas: "product_1 product_2 product_3 product_4"
         justify-content: space-between
-        flex-wrap: wrap 
+
+        .product_1 
+            grid-area: product_1
+
+        .product_2 
+            grid-area: product_2
+
+        .product_3 
+            grid-area: product_3
+
+        .product_4 
+            grid-area: product_4
+
 
         .img
             display: block
