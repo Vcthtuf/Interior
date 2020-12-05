@@ -67,11 +67,26 @@ a.button
         font-family: $Montserrat-Bold
         text-transform: uppercase
         text-align: center
+
+        @media screen and ( max-width: 980px )
+            font-size: 14px
+
+        @media screen and ( max-width:576px  )
+            font-size: 12px
+            
+
     .icon-ctrl
         font-size: 24px
         color: rgb(108, 108, 108)
         height: 31px
         font-family: $Montserrat-Bold
+
+        @media screen and ( max-width: 980px )
+            font-size: 23px
+
+        @media screen and ( max-width:576px  )
+            font-size: 21px
+
     &:hover
         .explore
             color: red

@@ -7,8 +7,19 @@
         align-items: center
         margin-bottom: 50px
 
+        @media screen and ( max-width: 576px )
+            margin-bottom: 30px
+
+        @media screen and ( max-width: 480px )
+            flex-direction: column
+            margin-bottom: 0
+            
+
         .name
             border-bottom: 1px solid rgb(108, 108, 108)
+
+            @media screen and ( max-width: 480px )
+                margin-bottom: 10px                
 
             a
                 display: inline-block      
@@ -19,6 +30,17 @@
                 margin-right: 13px
                 padding-right: 10px
                 padding-bottom: 10px
+
+                @media screen and ( max-width: 980px )
+                    font-size: 30px
+
+                @media screen and ( max-width: 768px )
+                    font-size: 22px
+
+                @media screen and ( max-width: 576px )
+                    font-size: 18px
+                    padding-bottom: 5px
+                    
 
                 &.featured_active
                     border-bottom: 3px solid rgb(33, 33, 33)
@@ -34,6 +56,7 @@
         @media screen and ( max-width: 768px )
             grid-template-columns: repeat(2, 1fr)
             grid-template-areas: "product_1 product_2" "product_3 product_4"
+            grid-gap: 20px
 
         @media screen and ( max-width: 480px )
             grid-template-columns: repeat(1, 80%)
@@ -112,8 +135,7 @@
                     text-align: center
                     font-family: $Montserrat-Bold
                     line-height: 1.364
-                    margin-bottom: 12/270*100%
-                    
+                    margin-bottom: 12/270*100%                   
 
                 &_details  
                    
