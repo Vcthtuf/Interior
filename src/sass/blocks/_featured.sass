@@ -1,0 +1,153 @@
+.featured
+    padding: 120/1366*100% 0
+
+    &_title
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 50px
+
+        .name
+            border-bottom: 1px solid rgb(108, 108, 108)
+
+            a
+                display: inline-block      
+                font-size: 36px
+                color: rgb(33, 33, 33)
+                font-family: $Montserrat-Bold
+                text-align: left
+                margin-right: 13px
+                padding-right: 10px
+                padding-bottom: 10px
+
+                &.featured_active
+                    border-bottom: 3px solid rgb(33, 33, 33)
+    
+    &_img
+        display: grid
+        grid-template-rows: 1fr
+        grid-template-columns: repeat(4, 1fr) // 23.07692307692308%
+        grid-template-areas: "product_1 product_2 product_3 product_4"
+        justify-content: space-between
+        grid-gap: 30px
+
+        @media screen and ( max-width: 768px )
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-areas: "product_1 product_2" "product_3 product_4"
+
+        @media screen and ( max-width: 480px )
+            grid-template-columns: repeat(1, 80%)
+            grid-template-areas: "product_1" "product_2" "product_3" "product_4"
+            justify-content: center            
+
+        .product_1 
+            grid-area: product_1
+
+        .product_2 
+            grid-area: product_2
+
+        .product_3 
+            grid-area: product_3
+
+        .product_4 
+            grid-area: product_4
+
+
+        .img
+            display: block
+            width: 100%
+            height: 100%
+            position: relative
+            cursor: pointer
+
+            img
+                width: 100%
+
+            .hover
+                display: none
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                position: absolute
+                transition: all 0.4s    
+                border-width: 1px
+                border-color: transparent
+                border-style: solid
+                background-color: rgb(255, 255, 255)
+                opacity: 0.902
+                padding: 62/270*100% 0
+
+                @media screen and ( max-width: 1200px )
+                    padding: 30/270*100% 0
+                    
+
+                &_circle  
+                   
+                    position: relative               
+                    border-radius: 50%
+                    background-color: rgb(255, 255, 255)
+                    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35)
+                    margin: 0 auto
+                    width: 48/270*100%
+                    height: 84/270*100%
+                    margin-bottom: 20/270*100%
+
+                    @media screen and ( max-width: 1200px )
+                        width: 69/270*100%
+                        
+
+                    span
+                       
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-65%, -50%) rotate(90deg)
+                        color: rgb(108, 108, 108)
+                        font-size: 30px 
+                &_name
+                    
+                    font-size: 22px
+                    color: rgb(33, 33, 33)
+                    text-align: center
+                    font-family: $Montserrat-Bold
+                    line-height: 1.364
+                    margin-bottom: 12/270*100%
+                    
+
+                &_details  
+                   
+                    font-size: 14px
+                    color: rgb(108, 108, 108)
+                    line-height: 1.571
+                    text-align: center
+                    width: 85%
+                    margin: 0 auto
+
+                @media screen and ( max-width: 1200px )
+                    &_name 
+                        font-size: 18px
+                    &_details 
+                        font-size: 13px
+
+                @media screen and ( max-width: 980px )
+                    &_name 
+                        font-size: 16px
+                    &_details 
+                        font-size: 11px
+                
+                @media screen and ( max-width: 576px )
+                    &_name 
+                        font-size: 16px
+                    &_details 
+                        font-size: 12px
+                
+                
+        .img:hover
+            .hover
+                display: block
+                border-color: rgb(156, 156, 156)
+
+    
+
+        
