@@ -1,10 +1,28 @@
 header
-    padding-top: 64px
-    padding-bottom: 200px
-    background: url(../img/bg/slider-img.jpg) center center/cover no-repeat
-    position: relative
+    height: 865px
+    // padding-top: 64px
+    // padding-bottom: 200px
+    // background: url(../img/bg/slider-img.jpg) center center/cover no-repeat
+   
 
-    .wrapper
+    .container
+        position: absolute
+        top: 64px
+        left: 50%
+        transform: translateX(-50%)
+
+    .slider_container 
+        width: 100%
+        height: 100%
+        position: relative
+
+        img
+            display: block
+            width: 100%
+            height: 100%
+
+
+    .wrapper_nav
         display: flex
         justify-content: space-between
         align-items: center
