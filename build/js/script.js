@@ -26,12 +26,18 @@ window.addEventListener('DOMContentLoaded', () => {
         headerSlides[next].classList.add('header_slide_next');
         headerSlides[next].classList.remove('header_slide_prev');
         headerSlides[next].classList.remove('header_slide_active');
+        headerSlides[next].style.left = "";
+
         headerSlides[prev].classList.add('header_slide_prev');
         headerSlides[prev].classList.remove('header_slide_next');
         headerSlides[prev].classList.remove('header_slide_active');
+        // setTimeout(headerSlides[prev].style.left = "-100%", 1000);
+
         headerSlides[n].classList.add('header_slide_active');
         headerSlides[n].classList.remove('header_slide_next');
         headerSlides[n].classList.remove('header_slide_prev');
+        headerSlides[n].style.left = "";
+
         dots[n].classList.add('header_dot_active');
     };
 
