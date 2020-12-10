@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (n < 0) { n = headerSlides.length - 1; }
 
         for (let i = 0; i < headerSlides.length; i++) {
-            headerSlides[i].classList.remove('header_slide_active');
+            // headerSlides[i].classList.remove('header_slide_active');
 
             dots[i].classList.remove('header_dot_active');
         }
