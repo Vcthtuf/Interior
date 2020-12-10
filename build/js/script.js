@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
         if (n < 0) { n = headerSlides.length - 1; }
 
         for (let i = 0; i < headerSlides.length; i++) {
-            // headerSlides[i].classList.remove('header_slide_active');
 
             dots[i].classList.remove('header_dot_active');
         }
@@ -22,7 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
             next = n + 1;
         if (next > headerSlides.length - 1) { next = 0; }
         if (prev < 0) { prev = headerSlides.length - 1; }
-        // headerSlides[n].style.transition = "all 1s";
         headerSlides[next].classList.add('header_slide_next');
         headerSlides[next].classList.remove('header_slide_prev');
         headerSlides[next].classList.remove('header_slide_active');
@@ -31,7 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
         headerSlides[prev].classList.add('header_slide_prev');
         headerSlides[prev].classList.remove('header_slide_next');
         headerSlides[prev].classList.remove('header_slide_active');
-        // setTimeout(headerSlides[prev].style.left = "-100%", 1000);
 
         headerSlides[n].classList.add('header_slide_active');
         headerSlides[n].classList.remove('header_slide_next');
@@ -40,6 +37,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
         dots[n].classList.add('header_dot_active');
     };
+    let width = document.documentElement.clientWidth;
+    console.log(width);
 
     setInterval(function () { showSlides(i); i++; if (i > headerSlides.length) { i = 1; } }, 2000);
 

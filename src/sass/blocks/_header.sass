@@ -1,5 +1,5 @@
 header
-    height: 865px
+    height: 0.6332357247437775*$width
     // padding-top: 64px
     // padding-bottom: 200px
     // background: url(../img/bg/slider-img.jpg) center center/cover no-repeat
@@ -38,18 +38,24 @@ header
             transition: all 1s
 
             z-index: -1
-           
-
-            
-
-
+ 
     .wrapper_nav
         display: flex
         justify-content: space-between
         align-items: center
         margin-bottom: 280px
+
+        @media screen and ( max-width: 1200px )
+            margin-bottom: 100px
+
     nav
-        width: 550 / 1170 * 100%
+        width: 550 / (0.8565153733528551*$width) * 100%
+        // @media screen and ( max-width: 1200px )
+        //     width: 56%
+
+        // @media screen and ( max-width: 992px )
+        //     width: 70%
+            
 
     .menu 
         display: flex
@@ -59,6 +65,8 @@ header
             padding: 0 10px
             border-bottom: 3px solid transparent
             padding: 10px
+            
+                
 
             &:hover
                 border-bottom: 1px solid #212121
@@ -84,6 +92,9 @@ header
     .logo
         width: 185px
         height: 22px
+
+        @media screen and ( max-width: 992px )
+            width: 150px
 
     .subtitle
         font-size: 18px
