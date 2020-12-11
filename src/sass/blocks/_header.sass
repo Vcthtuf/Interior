@@ -3,11 +3,15 @@ header
     // padding-top: 64px
     // padding-bottom: 200px
     // background: url(../img/bg/slider-img.jpg) center center/cover no-repeat
+
+    @media screen and ( min-width: 1170px )
+        height: 740px
+        
    
 
     .container
         position: absolute
-        top: 64px
+        top: 0.0547008547008547*$width // 64px
         left: 50%
         transform: translateX(-50%)
 
@@ -43,10 +47,10 @@ header
         display: flex
         justify-content: space-between
         align-items: center
-        margin-bottom: 280px
+        margin-bottom: 0.2393162393162393*$width // 280px
 
-        @media screen and ( max-width: 1200px )
-            margin-bottom: 100px
+        @media screen and ( min-width: 1170px )
+            margin-bottom: 280px
 
     nav
         width: 550 / 1170 * 100%
