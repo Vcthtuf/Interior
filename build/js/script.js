@@ -21,17 +21,14 @@ window.addEventListener('DOMContentLoaded', () => {
             next = n + 1;
         if (next > headerSlides.length - 1) { next = 0; }
         if (prev < 0) { prev = headerSlides.length - 1; }
-        headerSlides[next].classList.add('header_slide_next');
-        headerSlides[next].classList.remove('header_slide_prev');
-        headerSlides[next].classList.remove('header_slide_active');
+        headerSlides[next].classList.add('header_slide_prev');
+        headerSlides[next].classList.remove('header_slide_next');
         headerSlides[next].style.left = "";
 
-        headerSlides[prev].classList.add('header_slide_prev');
-        headerSlides[prev].classList.remove('header_slide_next');
+        headerSlides[prev].classList.add('header_slide_next');
         headerSlides[prev].classList.remove('header_slide_active');
 
         headerSlides[n].classList.add('header_slide_active');
-        headerSlides[n].classList.remove('header_slide_next');
         headerSlides[n].classList.remove('header_slide_prev');
         headerSlides[n].style.left = "";
 

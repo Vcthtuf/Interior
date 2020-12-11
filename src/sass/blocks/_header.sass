@@ -30,14 +30,14 @@ header
             transition: all 1s
 
         .header_slide_prev
-            left: -100%  
-            transition: all 1s          
+            left: 100%  
+            transition: all 1s 
+            z-index: -1         
             
         .header_slide_next 
-            left: 100%
+            left: -100%
             transition: all 1s
-
-            z-index: -1
+            
  
     .wrapper_nav
         display: flex
@@ -49,7 +49,7 @@ header
             margin-bottom: 100px
 
     nav
-        width: 550 / (0.8565153733528551*$width) * 100%
+        width: 550 / 1170 * 100%
         // @media screen and ( max-width: 1200px )
         //     width: 56%
 
