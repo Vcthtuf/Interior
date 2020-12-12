@@ -49,16 +49,22 @@ header
         align-items: center
         margin-bottom: 0.2393162393162393*$width // 280px
 
-        @media screen and ( min-width: 1170px )
+        @media screen and ( min-width: 1171px )
             margin-bottom: 280px
+
+        @media screen and ( max-width: 1170px )
+            margin-bottom: 100px
+
+        @media screen and ( max-width: 992px )
+            margin-bottom: 70px
 
     nav
         width: 550 / 1170 * 100%
-        // @media screen and ( max-width: 1200px )
-        //     width: 56%
+        @media screen and ( max-width: 1170px )
+            width: 59%
 
-        // @media screen and ( max-width: 992px )
-        //     width: 70%
+        @media screen and ( max-width: 992px )
+            width: 70%
             
 
     .menu 
@@ -107,6 +113,8 @@ header
         text-transform: uppercase
         text-align: left
         margin-bottom: 12px
+        @media screen and ( max-width: 992px )
+            font-size: 16px
 
     .title_main        
         font-size: 62px
@@ -116,6 +124,9 @@ header
         text-transform: uppercase
         text-align: left
         margin-bottom: 25px
+        @media screen and ( max-width: 992px )
+            font-size: 45px
+            margin-bottom: 15px
 
     .title_text  
         width: 470 / 1170 * 100%
@@ -125,3 +136,6 @@ header
         line-height: 1.714
         text-align: left
         margin-bottom: 30px
+        @media screen and ( max-width: 992px )
+            font-size: 12px
+            margin-bottom: 20px

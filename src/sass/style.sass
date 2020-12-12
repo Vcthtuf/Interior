@@ -49,6 +49,10 @@ a.button
     font-family: $Montserrat-Bold
     text-transform: uppercase
     text-align: center
+    @media screen and ( max-width: 992px )
+        width: 170px
+        height: 35px
+        line-height: 35px
 
     span
         margin-left: 20px
@@ -68,7 +72,7 @@ a.button
         text-transform: uppercase
         text-align: center
 
-        @media screen and ( max-width: 980px )
+        @media screen and ( max-width: 992px )
             font-size: 14px
 
         @media screen and ( max-width:576px  )
@@ -94,32 +98,47 @@ a.button
             color: red
 
 .slider_navigation
+    display: flex
+    justify-content: space-between
+    align-items: center
     width: 140px
     height: 40px
     text-align: center
     position: absolute
-    bottom: 45px
+    bottom: 30px
     left: 50%
     transform: translateX(-50%)
+    @media screen and ( max-width: 1170px )
+        width: 130px
+
+    @media screen and ( max-width: 992px )
+        width: 80px
+        bottom: 20px
 
     .header_dot
         display: inline-block
-        margin: 5px
-        width: 30px
-        height: 30px
+        margin: 0 5px
+        width: 25px
+        height: 25px
         background-color: #c7c7c7
         border-radius: 50%
         cursor: pointer
         transition: all .5s
+        @media screen and ( max-width: 992px )
+            width: 15px
+            height: 15px
 
         &:hover
             background-color: #212121
         
         &_active
-            width: 40px
-            height: 40px
+            width: 32px
+            height: 32px
             margin-bottom: 0
             background-color: #212121
+            @media screen and ( max-width: 992px )
+                width: 20px
+                height: 20px
 
 // ==== Styles for sections
 
