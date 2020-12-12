@@ -53,9 +53,21 @@ a.button
         width: 170px
         height: 35px
         line-height: 35px
-
+        font-size: 14px
+            
+    @media screen and ( max-width: 768px )
+        width: 150px
+        height: 25px
+        line-height: 25px
+        display: flex
+        justify-content: center
+        font-size: 12px
+        
     span
         margin-left: 20px
+        @media screen and ( max-width: 768px )
+            font-size: 18px
+
 
     &:hover
         color: red
@@ -75,7 +87,7 @@ a.button
         @media screen and ( max-width: 992px )
             font-size: 14px
 
-        @media screen and ( max-width:576px  )
+        @media screen and ( max-width: 768px  )
             font-size: 12px
             
 
@@ -88,8 +100,9 @@ a.button
         @media screen and ( max-width: 980px )
             font-size: 23px
 
-        @media screen and ( max-width:576px  )
+        @media screen and ( max-width: 768px  )
             font-size: 21px
+            height: 27px
 
     &:hover
         .explore

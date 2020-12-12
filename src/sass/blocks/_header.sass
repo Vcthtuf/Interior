@@ -58,6 +58,9 @@ header
         @media screen and ( max-width: 992px )
             margin-bottom: 70px
 
+        @media screen and ( max-width: 768px )
+            margin-bottom: 20px
+
     nav
         width: 550 / 1170 * 100%
         @media screen and ( max-width: 1170px )
@@ -65,11 +68,18 @@ header
 
         @media screen and ( max-width: 992px )
             width: 70%
+
+        @media screen and ( max-width: 768px )
+            width: 55%
             
 
     .menu 
         display: flex
         justify-content: space-between
+
+        @media screen and ( max-width: 768px )
+            flex-wrap: wrap
+            justify-content: center
         
         &_list 
             padding: 0 10px
@@ -106,6 +116,9 @@ header
         @media screen and ( max-width: 992px )
             width: 150px
 
+        @media screen and ( max-width: 768px )
+            width: 100px
+
     .subtitle
         font-size: 18px
         color: #43a047
@@ -115,6 +128,8 @@ header
         margin-bottom: 12px
         @media screen and ( max-width: 992px )
             font-size: 16px
+        @media screen and ( max-width: 768px )
+            font-size: 14px
 
     .title_main        
         font-size: 62px
@@ -127,6 +142,9 @@ header
         @media screen and ( max-width: 992px )
             font-size: 45px
             margin-bottom: 15px
+        @media screen and ( max-width: 768px )
+            font-size: 30px
+            margin-bottom: 10px
 
     .title_text  
         width: 470 / 1170 * 100%
@@ -139,3 +157,5 @@ header
         @media screen and ( max-width: 992px )
             font-size: 12px
             margin-bottom: 20px
+        @media screen and ( max-width: 768px )
+            line-height: 1
