@@ -1,0 +1,64 @@
+.trending
+    padding: 120px 0 90px 0
+    @media screen and ( max-width: 768px )
+        padding: 60px 0 50px
+        
+    &_title
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 60px
+        @media screen and ( max-width: 480px )
+            flex-wrap: wrap
+            justify-content: center
+            margin-bottom: 20px
+
+        .button
+            display: flex
+            align-items: center
+
+    &_name 
+        font-size: 36px
+        color: rgb(33, 33, 33)
+        font-family: $Montserrat-Bold
+        text-align: left
+        @media screen and ( max-width: 992px )
+            font-size: 25px
+        @media screen and ( max-width: 480px )
+            font-size: 18px
+            margin-bottom: 10px          
+ 
+    &_img
+        display: grid
+        grid-template-rows: repeat(2, auto)
+        grid-template-columns: repeat(3, 31.62393162393162%)
+        grid-template-areas: "img_1 img_2 img_3" "img_4 img_5 img_6"
+        grid-row-gap: 30px
+        justify-content: space-between
+
+        @media screen and ( max-width: 768px )
+            grid-template-columns: repeat(2, 48%)
+            grid-template-areas: "img_1 img_2" "img_3 img_4" "img_5 img_6"
+            
+      
+        img
+            display: block
+            width: 100%
+           
+        .img_1 
+            grid-area: img_1
+
+        .img_2 
+            grid-area: img_2
+
+        .img_3 
+            grid-area: img_3
+
+        .img_4 
+            grid-area: img_4
+
+        .img_5 
+            grid-area: img_5
+        
+        .img_6 
+            grid-area: img_6

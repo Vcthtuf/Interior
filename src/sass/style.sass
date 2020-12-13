@@ -97,6 +97,7 @@ a.button
 
         @media screen and ( max-width: 768px  )
             font-size: 12px
+            height: 12px
             
 
     .icon-ctrl
@@ -105,12 +106,13 @@ a.button
         height: 31px
         font-family: $Montserrat-Bold
 
-        @media screen and ( max-width: 980px )
-            font-size: 23px
+        @media screen and ( max-width: 992px )
+            font-size: 19px
+            height: 24spx
 
         @media screen and ( max-width: 768px  )
-            font-size: 21px
-            height: 27px
+            font-size: 16px
+            height: 22px
 
         @media screen and ( max-width: 480px )
             font-size: 20px
@@ -191,115 +193,9 @@ a.button
 
 @import 'blocks/header'
 @import 'blocks/featured'
+@import 'blocks/promo'
+@import 'blocks/trending'
 
-.promo
-    display: flex
-    height: 0.5043923865300146*$width
-    @media screen and ( max-width: 576px )
-        flex-wrap: wrap
-        height: 0.9*$width
-    @media screen and ( max-width: 480px )
-        height: 120vw
-        
-    
-    &_right
-        padding: 0.3201133144475921*0.5043923865300146*$width 0  0.3201133144475921*0.5043923865300146*$width 0.0708215297450425*0.5043923865300146*$width
-        background: url('../img/jpg/Promo/promo-img.jpg') center center/cover no-repeat
-        background-size: 100%
-        @media screen and ( max-width: 992px )
-            padding-top: 7vw
-            padding-bottom: 7vw
-                
-    &_left
-        padding: 0.3201133144475921*0.5043923865300146*$width 0  0.3201133144475921*0.5043923865300146*$width 0.0708215297450425*0.5043923865300146*$width
-        background: url('../img/jpg/Promo/promo-img1.jpg') center center/cover no-repeat
-        background-size: 100%
-        @media screen and ( max-width: 992px )
-            padding-top: 7vw
-            padding-bottom: 7vw
-
-    &_tag 
-        color: #368fe5
-        font-size: 18px
-        font-family: $Montserrat-Bold
-        text-transform: uppercase
-        text-align: left
-        margin-bottom: 12px
-        @media screen and ( max-width: 992px )
-            font-size: 16px
-        @media screen and ( max-width: 768px )
-            font-size: 14px
-
-    &_name    
-        font-size: 36px
-        color: rgb(33, 33, 33)
-        font-family: $Montserrat-Bold
-        text-align: left
-        margin-bottom: 13px
-        @media screen and ( max-width: 992px )
-            font-size: 30px
-        @media screen and ( max-width: 768px )
-            font-size: 25px            
-            
-    &_text
-        font-size: 14px
-        color: rgb(108, 108, 108)
-        line-height: 1.714
-        text-align: left
-        -moz-transform: matrix( 0.99926746581453,0,0,1.00149680228603,0,0)
-        -webkit-transform: matrix( 0.99926746581453,0,0,1.00149680228603,0,0)
-        -ms-transform: matrix( 0.99926746581453,0,0,1.00149680228603,0,0)
-        width: 400/658*100%
-        margin-bottom: 30px
-        @media screen and ( max-width: 992px )
-            font-size: 12px  
-        @media screen and ( max-width: 768px )
-            line-height: 1.2
-
-.trending
-    padding: 120px 0 90px 0
-
-    &_title
-        display: flex
-        justify-content: space-between
-        align-items: center
-        margin-bottom: 60px
-
-    &_name 
-        font-size: 36px
-        color: rgb(33, 33, 33)
-        font-family: $Montserrat-Bold
-        text-align: left
- 
-    &_img
-        display: grid
-        grid-template-rows: repeat(2, auto)
-        grid-template-columns: repeat(3, 31.62393162393162%)
-        grid-template-areas: "img_1 img_2 img_3" "img_4 img_5 img_6"
-        grid-row-gap: 30px
-        justify-content: space-between
-      
-        img
-            display: block
-            width: 100%
-           
-        .img_1 
-            grid-area: img_1
-
-        .img_2 
-            grid-area: img_2
-
-        .img_3 
-            grid-area: img_3
-
-        .img_4 
-            grid-area: img_4
-
-        .img_5 
-            grid-area: img_5
-        
-        .img_6 
-            grid-area: img_6
 
 .hot
     position: relative
