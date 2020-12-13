@@ -62,11 +62,19 @@ a.button
         display: flex
         justify-content: center
         font-size: 12px
+    @media screen and ( max-width: 480px )
+        width: 100px
+        height: 20px
+        font-size: 10px
+        line-height: 20px
+        padding-left: 10px
         
     span
         margin-left: 20px
         @media screen and ( max-width: 768px )
             font-size: 18px
+        @media screen and ( max-width: 480px )
+            margin-left: 5px
 
 
     &:hover
@@ -104,6 +112,10 @@ a.button
             font-size: 21px
             height: 27px
 
+        @media screen and ( max-width: 480px )
+            font-size: 20px
+            height: 20px
+
     &:hover
         .explore
             color: red
@@ -128,6 +140,14 @@ a.button
         width: 80px
         bottom: 20px
 
+    @media screen and ( max-width: 576px )
+        width: 68px
+        height: 30px
+        bottom: 5px
+
+    @media screen and ( max-width: 480px )
+        bottom: 0
+
     .header_dot
         display: inline-block
         margin: 0 5px
@@ -141,6 +161,10 @@ a.button
             width: 15px
             height: 15px
 
+        @media screen and ( max-width: 576px )
+            width: 10px
+            height: 10px
+
         &:hover
             background-color: #212121
         
@@ -152,6 +176,10 @@ a.button
             @media screen and ( max-width: 992px )
                 width: 20px
                 height: 20px
+            @media screen and ( max-width: 576px )
+                width: 15px
+                height: 15px
+                
 
 // ==== Styles for sections
 
@@ -166,6 +194,9 @@ a.button
 
 .promo
     display: flex
+    @media screen and ( max-width: 576px )
+        flex-wrap: wrap
+        
     
     &_right
         padding: 227px 0 226px 50px
@@ -263,7 +294,7 @@ a.button
         text-transform: uppercase
         line-height: 1.161
         text-align: left
-        width: 500px
+        width: 500/1170*100%
         margin-bottom: 15px
 
     &_text  
@@ -272,7 +303,7 @@ a.button
         color: rgb(108, 108, 108)
         line-height: 1.714
         text-align: left
-        width: 500px
+        width: 500/1170*100%
         margin-bottom: 35px
 
 .exclusive
@@ -338,7 +369,7 @@ a.button
         -moz-transform: matrix( 0.99926746581453,0,0,1.00149680228603,0,0)
         -webkit-transform: matrix( 0.99926746581453,0,0,1.00149680228603,0,0)
         -ms-transform: matrix( 0.99926746581453,0,0,1.00149680228603,0,0)
-        width: 332.142px
+        width: 332.142/1170*100%
         margin-bottom: 30px
  
 
@@ -372,7 +403,7 @@ a.button
         color: rgb(108, 108, 108)
         line-height: 1.091
         text-align: left
-        width: 470px
+        width: 470/1170*100%
         margin-bottom: 35px
 
     &_icon
@@ -403,6 +434,9 @@ a.button
         margin-bottom: 60px
         display: flex
         justify-content: space-between
+        @media screen and ( max-width: 576px )
+            flex-wrap: wrap
+            
 
         a          
             font-size: 14px
