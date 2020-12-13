@@ -194,18 +194,30 @@ a.button
 
 .promo
     display: flex
+    height: 0.5043923865300146*$width
     @media screen and ( max-width: 576px )
         flex-wrap: wrap
+        height: 0.9*$width
+    @media screen and ( max-width: 480px )
+        height: 120vw
         
     
     &_right
-        padding: 227px 0 226px 50px
+        padding: 0.3201133144475921*0.5043923865300146*$width 0  0.3201133144475921*0.5043923865300146*$width 0.0708215297450425*0.5043923865300146*$width
         background: url('../img/jpg/Promo/promo-img.jpg') center center/cover no-repeat
-    
+        background-size: 100%
+        @media screen and ( max-width: 992px )
+            padding-top: 7vw
+            padding-bottom: 7vw
+                
     &_left
-        padding: 227px 0 226px 50px
+        padding: 0.3201133144475921*0.5043923865300146*$width 0  0.3201133144475921*0.5043923865300146*$width 0.0708215297450425*0.5043923865300146*$width
         background: url('../img/jpg/Promo/promo-img1.jpg') center center/cover no-repeat
-    
+        background-size: 100%
+        @media screen and ( max-width: 992px )
+            padding-top: 7vw
+            padding-bottom: 7vw
+
     &_tag 
         color: #368fe5
         font-size: 18px
@@ -213,12 +225,22 @@ a.button
         text-transform: uppercase
         text-align: left
         margin-bottom: 12px
+        @media screen and ( max-width: 992px )
+            font-size: 16px
+        @media screen and ( max-width: 768px )
+            font-size: 14px
+
     &_name    
         font-size: 36px
         color: rgb(33, 33, 33)
         font-family: $Montserrat-Bold
         text-align: left
         margin-bottom: 13px
+        @media screen and ( max-width: 992px )
+            font-size: 30px
+        @media screen and ( max-width: 768px )
+            font-size: 25px            
+            
     &_text
         font-size: 14px
         color: rgb(108, 108, 108)
@@ -229,6 +251,10 @@ a.button
         -ms-transform: matrix( 0.99926746581453,0,0,1.00149680228603,0,0)
         width: 400/658*100%
         margin-bottom: 30px
+        @media screen and ( max-width: 992px )
+            font-size: 12px  
+        @media screen and ( max-width: 768px )
+            line-height: 1.2
 
 .trending
     padding: 120px 0 90px 0
