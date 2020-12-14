@@ -137,76 +137,12 @@ a.button
 @import 'blocks/featured'
 @import 'blocks/promo'
 @import 'blocks/trending'
-@import 'blocks/_hot'
+@import 'blocks/hot'
+@import 'blocks/exclusive'
 
 
 
 
-.exclusive
-    padding: 120px 0
-
-    .container
-        display: grid
-        grid-template-areas: "item_1 item_2 item_3" "item_1 item_4 item_5"
-        grid-template-rows: 46.71794871794872% 46.71794871794872%
-        grid-template-columns: 48.71794871794872% 1fr 1fr
-        gap: 30px
-        align-content: stretch
-
-    .item_1
-        display: flex 
-        flex-direction: column
-        justify-content: center
-        height: 100%
-        padding-left: 30px
-        background: url('../img/bg/Exclusive/product-1-lg.jpg') center center/cover no-repeat
-        grid-area: item_1
-
-    .item
-        
-        img
-            width: 100%
-            height: 100%
-            border: none
-
-    .item_2 
-        grid-area: item_2
-
-    .item_3 
-        grid-area: item_3
-
-    .item_4 
-        grid-area: item_4
-
-    .item_5
-        grid-area: item_5
-
-        
-    &_tag
-        font-size: 18px
-        color: #1e88e5
-        font-family: $Montserrat-Bold
-        text-transform: uppercase
-        text-align: left
-        margin-bottom: 10px
-
-    &_title  
-        font-size: 36px
-        color: rgb(33, 33, 33)
-        font-family: $Montserrat-Bold
-        text-align: left
-        margin-bottom: 10px
-
-    &_text  
-        font-size: 14px
-        color: rgb(108, 108, 108)
-        line-height: 1.714
-        text-align: left
-        -moz-transform: matrix( 0.99926746581453,0,0,1.00149680228603,0,0)
-        -webkit-transform: matrix( 0.99926746581453,0,0,1.00149680228603,0,0)
-        -ms-transform: matrix( 0.99926746581453,0,0,1.00149680228603,0,0)
-        width: 332.142/1170*100%
-        margin-bottom: 30px
  
 
 .mobile
