@@ -1,0 +1,202 @@
+.footer
+    padding: 120px 0 30px
+    background-color: #f7f7f7
+    @media screen and ( max-width: 992px )
+        padding: 90px 0 20px
+    @media screen and ( max-width: 992px )
+        padding: 60px 0 20px
+    @media screen and ( max-width: 480px )
+           padding: 30px 0 10px
+        
+    .container
+        h3 
+            font-size: 18px
+            color: rgb(108, 108, 108)
+            font-family: $Montserrat-Bold
+            text-transform: uppercase
+            text-align: left
+            margin-bottom: 20px
+            @media screen and ( max-width: 992px )
+                font-size: 16px
+            @media screen and ( max-width: 768px )
+                font-size: 13px
+        
+    &_top
+        margin-bottom: 60px
+        display: flex
+        justify-content: space-between
+        @media screen and ( max-width: 992px )
+            margin-bottom: 30px
+        @media screen and ( max-width: 768px )
+            flex-direction: column
+        
+        a          
+            font-size: 14px
+            color: rgb(33, 33, 33)
+            font-family: $Montserrat-Bold
+            text-transform: uppercase
+            line-height: 1.857
+            text-align: left
+            &:hover
+                color: red
+            @media screen and ( max-width: 1200px )
+                font-size: 13px
+            @media screen and ( max-width: 992px )
+                font-size: 10px
+                line-height: 1.7
+            @media screen and ( max-width: 768px )
+                line-height: 1.2
+                margin-bottom: 5px
+                
+                
+    &_block
+        display: flex
+
+        &_left,&_right
+            flex-basis: 235/470*100%
+            a 
+                display: block
+                &:hover
+                    color: red
+    
+    &_contact
+        flex-basis: 270/1170*100%
+        font-size: 14px
+        color: rgb(33, 33, 33)
+        line-height: 1.571
+        text-align: left
+        @media screen and ( max-width: 1200px )
+            line-height: 1.2
+            
+        @media screen and ( max-width: 992px )
+            .address, .phone
+                font-size: 12px
+                line-height: 1.2
+ 
+    &_info
+        flex-basis: 470/1170*100%
+
+    &_stay
+        flex-basis: 370/1170*100%   
+
+        .text 
+            font-size: 14px
+            color: rgb(33, 33, 33)
+            line-height: 1.571
+            text-align: left
+            margin-bottom: 20px
+            @media screen and ( max-width: 992px )
+                font-size: 12px
+                line-height: 1.2
+
+        form 
+            position: relative
+
+        input          
+            border-width: 1px
+            border-color: rgb(217, 222, 225)
+            border-style: solid
+            background-color: rgb(255, 255, 255)
+            width: 100%  
+            padding: 15px       
+            font-size: 14px
+            font-weight: 300
+            color: rgb(108, 108, 108)
+            &:focus
+                outline: none
+                border: none
+            @media screen and ( max-width: 768px )
+                padding: 8px
+                font-size: 9px
+                
+
+        .icon-compass
+            display: block
+            position: absolute
+            padding: 15px
+            top: 50%
+            right: 0
+            transform: translateY(-50%)
+            cursor: pointer
+            &:hover
+                outline: 1px solid rgb(217, 222, 225)
+            @media screen and ( max-width: 768px )
+                padding: 8px
+                font-size: 12px
+                
+                
+    &_bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media screen and ( max-width: 480px )
+            flex-direction: column
+            
+
+    &_copy 
+        font-size: 12px
+        color: rgb(108, 108, 108)
+        font-family: $Montserrat-Bold
+        text-transform: uppercase
+        text-align: left
+        @media screen and ( max-width: 992px )
+            font-size: 8px
+        @media screen and ( max-width: 480px )
+            order: 1
+            margin-bottom: 7px
+  
+    &_icons
+        
+        display: flex
+        justify-content: space-between
+        width: 140px
+        @media screen and ( max-width: 992px )
+            margin: 0 10px
+        @media screen and ( max-width: 480px )
+            margin-bottom: 7px
+        
+
+        
+
+    &_icon
+        position: relative
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        background-color: #6c6c6c 
+        @media screen and ( max-width: 992px )
+            margin: 0 3px
+            width: 27px
+            height: 27px
+        @media screen and ( max-width: 768px )
+            margin: 0 5px
+            width: 22px
+            height: 22px
+
+        a
+            width: 100%
+
+        img.google
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 12/32*100%
+        span
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            font-size: 13px
+            color: #fff
+
+    .footer_privacy  
+        font-size: 12px
+        color: rgb(108, 108, 108)
+        font-family: $Montserrat-Bold
+        text-transform: uppercase
+        text-align: right
+        @media screen and ( max-width: 992px )
+            font-size: 8px
+        @media screen and ( max-width: 480px )
+            order: 1
