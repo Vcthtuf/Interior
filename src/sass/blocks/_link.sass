@@ -1,6 +1,6 @@
 .link
     display: flex
-    justify-content: space-evenly
+    justify-content: space-between
     align-items: center
     width: 212px
     height: 45px
@@ -16,49 +16,53 @@
             color: red
 
     &__button
-        display: inline-block
+        width: 100%
+        display: flex
+        justify-content: space-evenly
         line-height: 45px
         height: 100%
         font-family: $Montserrat-Bold
         text-transform: uppercase
         text-align: center
+
+        span
+            display: block
+            transform: rotate(90deg)
+            font-size: 24px
+            color: rgb(108, 108, 108)
+            height: 100%
+            font-family: $Montserrat-Bold
+            @media screen and ( max-width: 768px )
+                font-size: 18px
+            @media screen and ( max-width: 480px )
+                font-size: 14px
+                margin-left: -5px
+            &:hover
+                color: red
         
         
     @media screen and ( max-width: 992px )
-        width: 170px
+        // width: 170px
         height: 35px
         &__button
             line-height: 35px
             font-size: 14px
                 
     @media screen and ( max-width: 768px )
-        width: 150px
+        // width: 150px
         height: 25px
         &__button
             line-height: 25px
             font-size: 12px
     @media screen and ( max-width: 480px )
-        width: 100px
+        // width: 100px
         height: 20px
         &__button
             font-size: 10px
             line-height: 20px
             padding-left: 10px
             
-    span
-        display: block
-        transform: rotate(90deg)
-        font-size: 24px
-        color: rgb(108, 108, 108)
-        height: 100%
-        font-family: $Montserrat-Bold
-        @media screen and ( max-width: 768px )
-            font-size: 18px
-        @media screen and ( max-width: 480px )
-            font-size: 14px
-            margin-left: -5px
-        &:hover
-            color: red
+        
         
 
    
