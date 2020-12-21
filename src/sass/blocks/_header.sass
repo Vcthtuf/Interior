@@ -125,8 +125,12 @@ header
         width: 40vw
         transition: all .5s
         z-index: 1
+        @media screen and ( max-width: 576px )
+            height: 50vh
         @media screen and ( max-width: 480px )
             height: 37vh
+        @media screen and ( max-width: 400px )
+            height: 32vh
             
 
         ul.menu_mobile
@@ -219,6 +223,8 @@ header
             margin-bottom: 20px
         @media screen and ( max-width: 768px )
             line-height: 1
+        @media screen and ( max-width: 576px )
+            width: 60%
         @media screen and ( max-width: 480px )
             font-size: 10px
             width: 85%
