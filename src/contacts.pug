@@ -18,19 +18,12 @@ html(lang="en")
                             img(src="icon/logo.png", alt="logo")
                     nav
                         ul.menu
-                            li.menu_list
-                                a.menu_link(href="index.html") HOME
-                            li.menu_list
-                                a.menu_link(href="products.html") PRODUCTS
-                            li.menu_list
-                                a.menu_link(href="#") HISTORY
-                            li.menu_list
-                                a.menu_link(href="#") SHOWROOM
-                            li.menu_list.menu_list_active
-                                a.menu_link(href="#") CONTACT
-                            li.menu_list
-                                a.menu_link(href="#") 
-                                    span.icon-search
+                            li.menu_list: a.menu_link(href="index.html") HOME
+                            li.menu_list: a.menu_link(href="products.html") PRODUCTS
+                            li.menu_list: a.menu_link(href="#") HISTORY
+                            li.menu_list: a.menu_link(href="#") SHOWROOM
+                            li.menu_list.menu_list_active: a.menu_link(href="#") CONTACT
+                            li.menu_list: a.menu_link(href="#"): span.icon-search
                 .title
                     h1.title_main Contact Us
         section.location
@@ -39,33 +32,27 @@ html(lang="en")
                     span.icon-location_on
                     .name California
                     .phone Phone:
-                    .phone_number
-                        a(href="tel:190012345678") 1900 - 1234 - 5678
+                    .phone_number: a(href="tel:190012345678") 1900 - 1234 - 5678
                     .email Email:
-                    .email_address
-                        a(href="mailto:info@interior.com") info@interior.com
+                    .email_address: a(href="mailto:info@interior.com") info@interior.com
                     .address_text Address:
                     .address 12 W 1st St, 90001 Los Angeles, California
                 .block
                     span.icon-location_on
                     .name California
                     .phone Phone:
-                    .phone_number
-                        a(href="tel:190012345678") 1900 - 1234 - 5678
+                    .phone_number: a(href="tel:190012345678") 1900 - 1234 - 5678
                     .email Email:
-                    .email_address
-                        a(href="mailto:info@interior.com") info@interior.com
+                    .email_address: a(href="mailto:info@interior.com") info@interior.com
                     .address_text Address:
                     .address 12 W 1st St, 90001 Los Angeles, California
                 .block
                     span.icon-location_on
                     .name California
                     .phone Phone:
-                    .phone_number
-                        a(href="tel:190012345678") 1900 - 1234 - 5678
+                    .phone_number: a(href="tel:190012345678") 1900 - 1234 - 5678
                     .email Email:
-                    .email_address
-                        a(href="mailto:info@interior.com") info@interior.com
+                    .email_address: a(href="mailto:info@interior.com") info@interior.com
                     .address_text Address:
                     .address 12 W 1st St, 90001 Los Angeles, California
         footer.footer
@@ -97,17 +84,9 @@ html(lang="en")
                 .footer_bottom
                     .footer_copy © Copyright - INTERIOR 2016. All Rights Reserved.
                     .footer_icons
-                        .footer_icon.fb
-                            a(href="https://facebook.com" target="_blank")
-                                span.icon-facebook
-                        .footer_icon.tw
-                            a(href="https://twitter.com" target="_blank")
-                                span.icon-twitter
-                        .footer_icon.google
-                            a(href="https://play.google.com" target="_blank")
-                                img.google(src="icon/google-plus.png", alt="google-plus")
-                        .footer_icon.pinterest  
-                            a(href="https://www.pinterest.ru" target="_blank")
-                                span.icon-pinterest2
+                        .footer_icon.fb: a(href="https://facebook.com" target="_blank"): span.icon-facebook
+                        .footer_icon.tw: a(href="https://twitter.com" target="_blank"): span.icon-twitter
+                        .footer_icon.google: a(href="https://play.google.com" target="_blank"): img.google(src="icon/google-plus.png", alt="google-plus")
+                        .footer_icon.pinterest: a(href="https://www.pinterest.ru" target="_blank"): span.icon-pinterest2
                     .footer_privacy Terms &amp; Conditions  /  Privacy policy &amp; Cookies     
         script(src='js/script.js')
