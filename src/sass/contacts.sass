@@ -2,11 +2,13 @@
 @import 'base/fonts'
 @import 'base/variables'
 
-
+=a_hover
+    :hover
+        color: red
 // ====  General styles  ====
 
 *
-    font-family: $Montserrat-Regular
+    // font-family: $Montserrat-Regular
     margin: 0
     padding: 0
     box-sizing: border-box
@@ -42,7 +44,7 @@ a.button
     border: none
     font-size: 18px
     color: rgb(108, 108, 108)
-    font-family: $Montserrat-Bold
+    // font-family: $Montserrat-Bold
     text-transform: uppercase
     text-align: center
 
@@ -88,7 +90,7 @@ header
                 border-bottom: 1px solid #212121
 
             &_active, &_active:hover
-                font-family: $Montserrat-Bold
+                // font-family: $Montserrat-Bold
                 border-bottom: 3px solid #212121
                 font-weight: 700
 
@@ -99,11 +101,11 @@ header
             height: 100%       
             font-size: 14px
             color: rgb(33, 33, 33)
-            font-family: $Montserrat-Regular
+            // font-family: $Montserrat-Regular
             text-transform: uppercase
 
             &_active
-                font-family: $Montserrat-Bold
+                // font-family: $Montserrat-Bold
                 border-bottom: 3px solid #212121 
                 font-weight: 700           
 
@@ -114,14 +116,14 @@ header
     .subtitle
         font-size: 18px
         color: #43a047
-        font-family: $Montserrat-Bold
+        // font-family: $Montserrat-Bold
         text-transform: uppercase
         text-align: left
         margin-bottom: 12px
 
     .title_main        
         font-size: 62px
-        font-family: $Montserrat-Thin
+        // font-family: $Montserrat-Thin
         letter-spacing: -0.07em
         color: rgb(33, 33, 33)
         text-align: left
@@ -156,26 +158,25 @@ header
             .name
                 font-size: 22px
                 color: rgb(33, 33, 33)
-                font-family: $Montserrat-Bold
+                // font-family: $Montserrat-Bold
                 text-transform: uppercase
                 margin-bottom: 15px
             .phone,.email,.address_text
                 font-size: 14px
                 color: rgb(108, 108, 108)
-                font-family: $Montserrat-Bold
+                // font-family: $Montserrat-Bold
                 margin-bottom: 5px
             .phone_number,.email_address
                 margin-bottom: 15px
                 a
                     font-size: 14px
                     color: #212121
-                    font-family: $Montserrat-Bold
-                    &:hover
-                        color: red
+                    // font-family: $Montserrat-Bold
+                    // +a_hover
             .address
                 font-size: 14px
                 color: #6c6c6c
-                font-family: $Montserrat-Regular
+                // font-family: $Montserrat-Regular
 
 .footer
     padding: 120px 0 30px
@@ -184,7 +185,7 @@ header
         h3 
             font-size: 18px
             color: rgb(108, 108, 108)
-            font-family: $Montserrat-Bold
+            // font-family: $Montserrat-Bold
             text-transform: uppercase
             text-align: left
             margin-bottom: 20px
@@ -198,12 +199,11 @@ header
         a          
             font-size: 14px
             color: rgb(33, 33, 33)
-            font-family: $Montserrat-Bold
+            // font-family: $Montserrat-Bold
             text-transform: uppercase
             line-height: 1.857
             text-align: left
-            &:hover
-                color: red
+            +a_hover
 
     &_block
         display: flex
@@ -212,8 +212,7 @@ header
             flex-basis: 235/470*100%
             a 
                 display: block
-                &:hover
-                    color: red
+                +a_hover
     
     &_contact
         flex-basis: 270/1170*100%
@@ -271,7 +270,7 @@ header
     &_copy 
         font-size: 12px
         color: rgb(108, 108, 108)
-        font-family: $Montserrat-Bold
+        // font-family: $Montserrat-Bold
         text-transform: uppercase
         text-align: left
   
@@ -309,7 +308,7 @@ header
     .footer_privacy  
         font-size: 12px
         color: rgb(108, 108, 108)
-        font-family: $Montserrat-Bold
+        // font-family: $Montserrat-Bold
         text-transform: uppercase
         text-align: right
 

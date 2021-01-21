@@ -1,3 +1,8 @@
+
+=a_hover
+    &:hover
+        color: red
+
 .footer
     padding: 120px 0 30px
     background-color: #f7f7f7
@@ -44,8 +49,7 @@
             text-transform: uppercase
             line-height: 1.857
             text-align: left
-            &:hover
-                color: red
+            +a_hover
             @media screen and ( max-width: 1200px )
                 font-size: 13px
             @media screen and ( max-width: 992px )
@@ -67,8 +71,7 @@
             flex-basis: 235/470*100%
             a 
                 display: block
-                &:hover
-                    color: red
+                +a_hover
     
     &_contact
         flex-basis: 270/1170*100%
