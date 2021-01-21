@@ -39,14 +39,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
     setInterval(function () { showSlides(i); i++; if (i > headerSlides.length) { i = 1; } }, 2000);
 
-
-    // hamburger 
-
-    let hamburger = document.querySelector('.hamburger'),
-        mobileMenu = document.querySelector('.mobile_menu');
-    hamburger.addEventListener('click', function () {
-        hamburger.classList.toggle('hamburger_active');
-        mobileMenu.classList.toggle('mobile_menu_active');
-    });
-
 });

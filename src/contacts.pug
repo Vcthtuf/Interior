@@ -13,18 +13,29 @@ html(lang="en")
     body
         header
             .container
-                .wrapper
-                    .logo
-                        a(href="#")
-                            img(src="icon/logo.png", alt="logo")
-                    nav
-                        ul.menu
-                            li.menu_list: a.menu_link(href="index.html") HOME
-                            li.menu_list: a.menu_link(href="products.html") PRODUCTS
-                            li.menu_list: a.menu_link(href="#") HISTORY
-                            li.menu_list: a.menu_link(href="#") SHOWROOM
-                            li.menu_list.menu_list_active: a.menu_link(href="#") CONTACT
-                            li.menu_list: a.menu_link(href="#"): span.icon-search
+                .wrapper_nav
+                        .logo
+                            a(href="#")
+                                img(src="icon/logo.png", alt="logo")
+                        nav.main_menu
+                            ul.menu
+                                li.menu_list: a.menu_link(href="index.html") HOME
+                                li.menu_list: a.menu_link(href="products.html") PRODUCTS
+                                li.menu_list: a.menu_link(href="#") HISTORY
+                                li.menu_list: a.menu_link(href="#") SHOWROOM
+                                li.menu_list.menu_list_active: a.menu_link(href="#") CONTACT
+                                li.menu_list: a.menu_link(href="#"): span.icon-search
+                        nav.mobile_menu
+                            ul.menu_mobile
+                                li.mobile_list: a(href="#") HOME
+                                li.mobile_list: a(href="products.html") PRODUCTS
+                                li.mobile_list: a(href="#") HISTORY
+                                li.mobile_list: a(href="#") SHOWROOM
+                                li.mobile_list: a(href="#") CONTACT                              
+                        .hamburger
+                            span
+                            span
+                            span
                 .title
                     h1.title_main Contact Us
         section.location
@@ -91,4 +102,4 @@ html(lang="en")
                         .footer_icon.pinterest: a(href="https://www.pinterest.ru" target="_blank"): span.icon-pinterest2
                     .footer_privacy Terms &amp; Conditions  /  Privacy policy &amp; Cookies     
 
-        script(src='js/script.js')
+        script(src='js/hamburger.js')
