@@ -63,19 +63,7 @@ html(lang="en")
                     img(src="img/jpg/Trending/product-6.jpg", alt="product")
                 .icon_arrow
                     img(src="icon/arrows_circle.jpg", alt="arrow_circle")
-        section.promo
-            .promo_left
-                .promo_tag exclusive
-                .promo_name Fishnet Chair
-                .promo_text Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black  or highly polished chrome.
-                a.button(href="#") Order Us
-                        span.icon-ctrl
-            .promo_right
-                .promo_tag exclusive
-                .promo_name Fishnet Chair
-                .promo_text Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black  or highly polished chrome.
-                a.button(href="#") Order Us
-                        span.icon-ctrl     
+        include includes/_promo.pug  
         include includes/_footer.pug
             
         script(src='js/hamburger.js')
